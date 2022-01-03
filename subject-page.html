@@ -15,7 +15,7 @@
 
             table, th, td {
             border:1px solid black;
-            border-collapse: collapse;
+            
             }
 
             .header{
@@ -111,8 +111,14 @@
             .tab{
                 width: 100%;
                 font-family: monospace;
-                margin-left: 20px;
-                margin-right: 20px;
+            }
+
+            th, td{
+                padding: 5px;
+            }
+
+            table, th, td{
+                border: 1px solid rgb(37, 37, 37);
             }
 
 
@@ -144,25 +150,25 @@
             </div>
         </div>
 
-
-        <table class="tab" style="width:100%">
-            <tr>
-              <th>Upload Date</th>
-              <th>File Name</th>
-              <th>Action</th>
-            </tr>
-            <tr>
-              <td>Random Static Entry</td>
-              <td>Random Static Entry</td>
-              <td><input type="file" label="Change"><input type="submit" value="Delete File"></td>
-            </tr>
-            <tr>
-              <td>Random Static Entry</td>
-              <td>Random Static Entry</td>
-              <td>Random Static Entry</td>
-            </tr>
-        </table>
-
+        <div class="tab" style="padding:20px">
+            <table style="width: 100%;">
+                <tr>
+                <th>Upload Date</th>
+                <th>File Name</th>
+                <th>Action</th>
+                </tr>
+                <tr>
+                <td>Random Static Entry</td>
+                <td>Random Static Entry</td>
+                <td><input type="file" label="Change"><input type="submit" value="Delete File"></td>
+                </tr>
+                <tr>
+                <td>Random Static Entry</td>
+                <td>Random Static Entry</td>
+                <td>Random Static Entry</td>
+                </tr>
+            </table>
+        </div>
     </body>
 
 </HTML>
