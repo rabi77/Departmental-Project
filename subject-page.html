@@ -69,8 +69,7 @@
             .search{
                 vertical-align: middle;
                 float: right;
-                margin-top: 20px;
-                
+                margin-top: 25px;  
             }
 
             .subject_name{
@@ -83,6 +82,18 @@
                 color:grey;
                 font-family: monospace;
             }
+
+            input[type=text] {
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 20px;
+                background-image: url(https://lh3.googleusercontent.com/-qaGpL1P-hOI/YdKysX5e6wI/AAAAAAAAUIg/MzJePfoPg0gwbZRtiY1QnnfKKMezFKLxQCNcBGAsYHQ/w20-h20/hh.png);
+                background-repeat: no-repeat;
+                background-position-y: center;
+                background-position-x: 5px;
+                padding: 10px 10px 10px 30px;
+            }
+
 
         </style>
     </head>
@@ -105,7 +116,10 @@
             </div>
 
             <div class="search">
-                <input type="text">
+                <form action="">
+                    <input type="text" placeholder="Type file name to search..." size="40px">
+                    <input type="submit" value="Search">
+                </form>
             </div>
 
         </div>
@@ -120,7 +134,7 @@
             <tr>
               <td>Random Static Entry</td>
               <td>Random Static Entry</td>
-              <td>Random Static Entry</td>
+              <td><input type="file" label="Change"><input type="submit" value="Delete File"></td>
             </tr>
             <tr>
               <td>Random Static Entry</td>
