@@ -28,7 +28,7 @@
                 width: 1000px;
                 height: 100%;
                 display: block;
-                background-color: blue;
+                background-color: green;
                 margin: 0 auto;
             }
 
@@ -50,6 +50,31 @@
             .logo h1 span {
                 font-weight: 800;
             }
+            
+            .details_pane{
+                width: 100%;
+                height: 80px;
+                display: block;
+                margin: 20px 20px;
+                background-color: rgb(153, 0, 0);
+            }
+            .details{
+                float: left;
+                vertical-align: middle;
+                height: 100%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            .details p{
+                font-weight: 500;
+            }
+            .details p span{
+                font-weight: 100;
+            }
+
+            .search{
+                float: right;
+            }
 
         </style>
     </head>
@@ -64,21 +89,34 @@
             </div>
         </div>
 
+        <div class="details_pane">
+            
+            <div class="details">
+                <p>Database Management System<br><span>Prof. Joydeep Banerjee</span></p>
+            </div>
+
+            <div class="search">
+                <input type="text">
+            </div>
+
+        </div>
+
+
         <table style="width:100%">
             <tr>
-              <th>Company</th>
-              <th>Contact</th>
-              <th>Country</th>
+              <th>Upload Date</th>
+              <th>File Name</th>
+              <th>Action</th>
             </tr>
             <tr>
-              <td>Alfreds Futterkiste</td>
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td>Random Static Entry</td>
+              <td>Random Static Entry</td>
+              <td>Random Static Entry</td>
             </tr>
             <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td>Francisco Chang</td>
-              <td>Mexico</td>
+              <td>Random Static Entry</td>
+              <td>Random Static Entry</td>
+              <td>Random Static Entry</td>
             </tr>
         </table>
 
