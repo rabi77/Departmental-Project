@@ -7,35 +7,81 @@
         </title>
 
         <style>
-            ul#list-nav {
-            margin:20px;
-            padding:0;
-            list-style:none;
-            width:525px;}
 
-            ul#list-nav li {
-            display:inline
+            *{
+                margin:0;
+                padding: 0;
             }
 
-            ul#list-nav li a {
-            text-decoration:none;
-            padding:5px 0;
-            width:100px;
-            background:#485e49;
-            color:#eee;
-            float:left;
+            table, th, td {
+            border:1px solid black;
             }
-}
+
+            .header{
+                width:100%;
+                height:80px;
+                display:block;
+                background-color: black;
+            }
+
+            .inner_header{
+                width: 1000px;
+                height: 100%;
+                display: block;
+                background-color: blue;
+                margin: 0 auto;
+            }
+
+            .logo{
+                float: left;
+                height: 100%;
+                display: table;
+            }
+
+            .logo h1 {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
+                height: 100%;
+                display: table-cell;
+                vertical-align: middle;
+                font-size: 32px;
+                font-weight: 200;
+            }
+            .logo h1 span {
+                font-weight: 800;
+            }
+
         </style>
     </head>
 
     <body>
-        <ul id="list-nav">
-            <li><a href="#">Logout</a></li>
-            <li><a href="#">Account</a></li>
-            <li><a href="#">My Subjects</a></li>
-          </ul>
-    </body>
 
+        <div class="header">
+            <div class="inner_header">
+                <div class="logo">
+                    <h1>L<span>MS</span>  </h1> 
+                </div>
+            </div>
+        </div>
+
+        <table style="width:100%">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+        </table>
+
+    </body>
 
 </HTML>
